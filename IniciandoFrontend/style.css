@@ -1,9 +1,12 @@
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap";
 
+/*=== VARIAVEIS ===*/
 :root {
-    --color-green: #50fa7b
+    --color-green: #50fa7b;
+    --color-rocketseat: #7159c1;
 }
 
+/*=== HEADER ===*/
 * {
     margin: 0;
     padding: 0;
@@ -75,4 +78,38 @@ header {
     margin: 30px auto;
     font-style: 24px;
     line-height: 24px;
+}
+
+/*=== CARDS ===*/
+.cards {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.card {
+    background-color: var(--color-rocketseat);
+}
+
+.card__image-container img {
+    width: 100%;
+}
+
+.card__content, .card__info {
+    padding: 24px;
+}
+
+.card__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card__price {
+    background-color: var(--color-rocketseat);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
 }
