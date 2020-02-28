@@ -1,0 +1,228 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
+
+/*=== GLOBAL ===*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+a, .redes-sociais{
+    color: white;
+    text-decoration: none;
+}
+
+.container .conteudo {
+    display: grid;
+    justify-items: center;
+    width: 50%;
+}
+
+/*=== BODY ===*/
+body {
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    background-color: rgb(48, 40, 40);
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*=== HEADER ===*/
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    width: 70%;
+    grid-gap: 30px;
+}
+
+header a {
+    height: 80%;
+    border-radius: 5px;
+    display: grid;
+    align-content: center;
+    border: 1px solid #7159c1;
+    transition: 800ms;
+}
+header a:hover {
+    background-color: #7159c1;
+    font-size: 2em;
+}
+
+/*=== MAIN - INDEX ===*/
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+main .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    grid-gap: 40px;
+}
+
+main .cards a {
+    display: grid;
+    align-items: center;
+    background-color: rgb(63, 56, 56);
+    transition: 200ms;
+    text-align: center;
+    width: 100%; 
+    height: 80%;
+    border-radius: 10px;
+    font-size: 3em;
+}
+
+main .cards a:hover {
+    width: 110%; 
+    height: 85%;
+    color: #7159c1;
+    background-color: white;
+    font-size: 3.8em;
+}
+
+/*=== MAIN - SOBRE ===*/
+main .container {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: repeat(2, 1fr) 10vh;
+    background-color: rgb(63, 56, 56);
+    width: 70%;
+    margin: 0em;
+    font-size: 1.5em;
+}
+
+.conteudo img {
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.container .tecnologia {
+    display: grid;
+    align-content: center;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.container h3 {
+    margin-bottom: 20px;
+}
+
+.tecnologia ul li {
+    text-align: center;
+    list-style: none;
+}
+
+.container .redes-sociais {
+    width: 70%;
+    text-align: center;    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+}
+
+.redes-sociais a {
+    display: grid;
+    align-items: center;
+    border: 1px solid #7159c1;
+    margin: 10px;
+    transition: 600ms;
+}
+
+.redes-sociais a:hover {
+    background-color: #7159c1;
+    margin: 5px;
+    font-size: 1.5em;
+}
+
+/*=== CONTEUDO ===*/
+.cards a img {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+/*=== MODAL ===*/
+
+.modal-over {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    height: 90%;
+    width: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal .min-modal {
+    color: black;
+    position: absolute;
+    right: 32px;
+    top: 2px;
+    cursor: pointer;
+}
+
+.modal .max-modal {
+    color: black;
+    position: absolute;
+    right: 32px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal-over.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.minimize {
+    height: 50px;
+}
+
+.none {
+    display: none;
+}
