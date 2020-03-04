@@ -1,0 +1,144 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap";
+
+/*=== GLOBAL ===*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    display: grid;
+    grid-template-rows: 93px 1fr 62px;
+    background-color: white;
+    width: 100%;
+}
+
+/*=== MENU ===*/
+.menu {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 213px 1fr;
+    width: 940px;
+    align-items: center;
+    height: 100%;
+}
+
+.menu a img {
+    width: 96.6px;
+    height: 26.9px;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 16px;
+    margin-right: 30px;
+}
+
+.menu ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/*=== BANNER ===*/
+.banner {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 940px;
+    height: 366px;
+    background-color: #FBDFDB;
+    border-radius: 30PX;
+}
+
+.banner .text {
+    width: 316px;
+    margin-left: 60px;
+}
+
+.banner .text h1 {
+    font-size: 32px;
+    margin-top: 117px;
+    margin-bottom: 10px;
+}
+
+.banner .text p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.banner img {
+    height: 300px;
+    justify-self: right;
+    align-self: flex-end;
+    margin-right: 100px;
+}
+
+/*=== CARD ===*/
+main {
+    height: 100%;
+}
+
+.mais-assadas {
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 98px 1fr;
+    width: 940px;
+    height: 582px;
+    overflow: hidden;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    cursor: pointer;
+}
+
+.mais-assadas .content {
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.cards .card img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+}
+.cards .card h1 {
+    margin-bottom: 5px;
+}
+
+.cards .card p {
+    margin-bottom: 30px;
+} 
+
+/*=== SOBRE ===*/
+.container {
+    display: grid;
+    grid-template-rows: 74px, 1fr;
+}
+
+.container .title h2 {
+    font-size: 24px;
+}
+
+.container .content p {
+    font-size: 18px;
+    line-height: 28px;
+}
+/*=== RECEITAS ===*/
+
+/*=== FOOTER ===*/
+footer {
+    display: grid;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: #EEEEEE;
+    font-size: 14px;
+    color: #999;
+}
